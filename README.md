@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+# React Render Performance Analysis
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project utilizes `react-devtools-inline` to analyze and understand how React renders components. This knowledge is crucial in identifying bottlenecks and optimizing the performance of our React components.
 
-Currently, two official plugins are available:
+## How it Works
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`react-devtools-inline` is a package that allows us to embed React DevTools into our application. It provides us with a detailed view of the component tree, current state and props, and other useful information about the performance of our components.
 
-## Expanding the ESLint configuration
+By integrating `react-devtools-inline` we can:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Using React DevTools directly in the UI instead of a separate browser extension.
+- Inspect the current state and props of our components.
+- Trace when and why certain components re-render.
+- Identify components that render too often, thus potentially impacting performance.
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+To get started with this project:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clone the repository.
+2. Install the dependencies using `yarn install`
+3. Start the development server using `yarn dev`
+
+Now you can open the application in your browser and start understanding how React renders components!
