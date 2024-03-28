@@ -5,7 +5,7 @@ import {
 } from 'react-devtools-inline/backend';
 import { initialize as createDevTools } from 'react-devtools-inline/frontend';
 
-const APP_SOURCE = import.meta.env.DEV ? '/src/main.tsx' : 'main.js';
+const APP_SOURCE = import.meta.env.DEV ? '/src/main.tsx' : `main.${import.meta.env.VITE_COMMIT_HASH}.js`;
 
 function hookNamesModuleLoaderFunction() {
   return import('react-devtools-inline/hookNames');
