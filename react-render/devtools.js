@@ -1,6 +1,6 @@
 function __vite__mapDeps(indexes) {
   if (!__vite__mapDeps.viteFileDeps) {
-    __vite__mapDeps.viteFileDeps = ["hookNames.BPBnfwl9.js","client.Dtxw8aO3.js"]
+    __vite__mapDeps.viteFileDeps = ["react-render/hookNames.BPBnfwl9.js","react-render/client.Dtxw8aO3.js"]
   }
   return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
 }
