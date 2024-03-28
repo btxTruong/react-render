@@ -13,7 +13,6 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "postbuild": "node scripts/postbuild.cjs",
     "lint": "eslint react-render --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "prod": "pm2 start scripts/pm2.config.cjs --no-daemon"
