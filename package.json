@@ -18,16 +18,21 @@
     "prod": "pm2 start scripts/pm2.config.cjs --no-daemon"
   },
   "dependencies": {
+    "@chakra-ui/react": "2.8.2",
     "@emotion/react": "11.11.4",
-    "@emotion/styled": "11.11.0",
+    "@emotion/styled": "11.11.5",
+    "framer-motion": "11.0.24",
+    "lodash": "4.17.21",
     "pm2": "5.3.1",
     "react": "0.0.0-experimental-2b036d3f1-20240327",
     "react-devtools-inline": "5.0.2",
     "react-dom": "0.0.0-experimental-2b036d3f1-20240327",
     "react-is": "18.2.0",
+    "react-syntax-highlighter": "15.5.0",
     "serve-handler": "6.1.5"
   },
   "devDependencies": {
+    "@types/lodash": "4.17.0",
     "@types/node": "20.11.30",
     "@types/react": "18.2.73",
     "@types/react-dom": "18.2.22",
@@ -38,6 +43,7 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-refresh": "0.4.6",
     "typescript": "5.4.3",
-    "vite": "5.2.6"
+    "vite": "5.2.6",
+    "vite-tsconfig-paths": "4.3.2"
   }
 }

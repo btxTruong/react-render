@@ -1,7 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './App.tsx'
-import './index.css'
+import { Providers } from '@:providers';
 
 const container = document.createElement('div');
 
@@ -9,6 +8,6 @@ document.body.appendChild(container);
 
 createRoot(container).render(
   <React.StrictMode>
-    <App />
+    <Providers />
   </React.StrictMode>,
 )

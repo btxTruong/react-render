@@ -78,5 +78,4 @@ iframe.id = 'app';
 const devtoolsContainer = document.getElementById('devtools') as HTMLElement;
 document.body.appendChild(iframe);
 
-// TODO: need to find the way to get file name from vite
 init(iframe, devtoolsContainer, APP_SOURCE);
