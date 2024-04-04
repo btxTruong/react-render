@@ -18,6 +18,7 @@
     "prod": "pm2 start scripts/pm2.config.cjs --no-daemon"
   },
   "dependencies": {
+    "@chakra-ui/icons": "2.1.1",
     "@chakra-ui/react": "2.8.2",
     "@emotion/react": "11.11.4",
     "@emotion/styled": "11.11.5",
@@ -29,7 +30,8 @@
     "react-dom": "0.0.0-experimental-2b036d3f1-20240327",
     "react-is": "18.2.0",
     "react-syntax-highlighter": "15.5.0",
-    "serve-handler": "6.1.5"
+    "serve-handler": "6.1.5",
+    "zustand": "4.5.2"
   },
   "devDependencies": {
     "@types/lodash": "4.17.0",
